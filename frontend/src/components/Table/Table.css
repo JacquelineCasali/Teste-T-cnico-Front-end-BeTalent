@@ -81,3 +81,15 @@ tbody tr:hover {
   td:first-letter {
     text-transform: capitalize;
   }
+
+  .img{
+    width: 34px;
+    height: 34px;
+
+  
+    object-fit: cover;
+
+    border-radius: 100px;
+
+  margin-top: 10px;
+  }
