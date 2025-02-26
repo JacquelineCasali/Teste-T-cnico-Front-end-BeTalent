@@ -4,6 +4,9 @@
 --gray: #F0F0F0;
 --gray-10:#DFDFDF;
 --black:#1C1C1C;
+--primary: #0500FF;
+
+
 --m:16px;
   --xl:32px;
   /* --sm:14px;
@@ -28,14 +31,20 @@ body {
   font-family: Helvetica Neue;
 background: var(--gray);
 width: 100%;
+
   /* min-height: 100svh; */
 }
 .main{
-display: flex;
+
 padding:  44px 32px;
-justify-content: space-between;
-align-items: center;
-  
+
+}
+.titles{
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  padding-bottom: 38px;
+    
 }
 a {
   color: inherit;
