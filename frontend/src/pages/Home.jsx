@@ -1,9 +1,12 @@
+import Navbar from "../components/Navbar/Navbar";
 
 
 
 export default function Home() {
   return (
-<div className="main">ola</div>
+<div className="main">
+  <Navbar/>
+</div>
   )
  
   
