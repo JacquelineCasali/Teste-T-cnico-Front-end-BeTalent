@@ -28,9 +28,13 @@ try{
    
             const searchLowerCase = busca.toLowerCase();
             console.log(busca);
-            const nome = data.filter((funcionario) =>
-             funcionario.name.toLowerCase().includes(searchLowerCase)
-            );   
+            const dados = data.filter((funcionario) =>
+             funcionario.name.toLowerCase().includes(searchLowerCase)||
+            funcionario.job.toLowerCase().includes(searchLowerCase)|| 
+            funcionario.phone.toLowerCase().includes(searchLowerCase)
+       
+            
+          );   
 
  
   return (
@@ -43,7 +47,7 @@ try{
     </div>
  
  
-    {nome.length>0?(
+    {dados.length>0?(
  
  <table>
           <thead >
@@ -60,7 +64,7 @@ try{
 
 
 
-{nome.map((c, i) => {
+{dados.map((c, i) => {
   return (
 <tr key={i}>
 <td>
