@@ -36,14 +36,14 @@ width: 100%;
 }
 .main{
 
-padding:  44px 32px;
+padding:   32px;
 
 }
 .titles{
   justify-content: space-between;
   align-items: center;
   display: flex;
-  padding-bottom: 38px;
+  padding-bottom: 25px;
     
 }
 a {

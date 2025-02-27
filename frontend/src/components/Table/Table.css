@@ -22,10 +22,12 @@ line-height: 19.54px;
 
 
   }
-
+  table tbody{
+    height: 499px;
+  }
  table tbody tr{
     border: solid 2px var(--gray-10);
-
+    height: 49px; 
     vertical-align: middle;
     border-left: 0;
     border-right: 0;
@@ -41,7 +43,7 @@ border-color: #dee2e6;
 vertical-align: middle;
 border-left: 0;
 border-right: 0;
-height: 49px; 
+
 font-weight: 400;
 font-size: var(--m);
 line-height: 19.09px;

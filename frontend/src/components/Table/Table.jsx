@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import "./Table.css"
 import api from '../../database/api'
-
+import {  addDays } from "date-fns";
 export default function Table() {
+
+
   const [data, setData]=useState([])
   // const url ='http://localhost:5000/employees'
 
@@ -38,7 +40,9 @@ export default function Table() {
   </td>
 <td>{c.name}</td>
 <td>{c.job}</td>
-<td>{c.admission_date}</td>
+<td>{new Intl.DateTimeFormat('pt-BR',{dateStyle:'short'}).format(
+  addDays(new Date(c.admission_date),1)
+ )}</td>
 <td>{c.phone}</td>
   </tr>
  )})}
