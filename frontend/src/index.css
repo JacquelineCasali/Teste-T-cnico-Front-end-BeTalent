@@ -30,9 +30,9 @@
 body {
   font-family: Helvetica Neue;
 background: var(--gray);
-width: 100%;
+/* width: 100%; */
 
-  /* min-height: 100svh; */
+  /* height: 600px; */
 }
 .main{
 

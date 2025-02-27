@@ -6,7 +6,7 @@ table{
     width: 100%;
     box-shadow: 0px 1px 2px 0px #00000033;
     border-spacing: 0;
-
+    /* height: 499px; */
 }
 
 table tr th {
@@ -22,9 +22,9 @@ line-height: 19.54px;
 
 
   }
-  table tbody{
-    height: 499px;
-  }
+  /* table tbody{
+ 
+  } */
  table tbody tr{
     border: solid 2px var(--gray-10);
     height: 49px; 
@@ -87,11 +87,7 @@ tbody tr:hover {
   .img{
     width: 34px;
     height: 34px;
-
-  
-    object-fit: cover;
-
+   object-fit: cover;
     border-radius: 100px;
-
   margin-top: 10px;
   }
