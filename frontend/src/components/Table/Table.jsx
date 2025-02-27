@@ -2,12 +2,12 @@ import React, { useEffect, useState } from 'react'
 import "./Table.css"
 import api from '../../database/api'
 import {  addDays } from "date-fns";
+import formatarTelefone from '../../utils/formatarTelefone';
 export default function Table() {
 
 
   const [data, setData]=useState([])
-  // const url ='http://localhost:5000/employees'
-
+ 
   useEffect(()=>{
 
     api.get("/employees")
@@ -15,7 +15,8 @@ export default function Table() {
          setData(response.data)})
          .catch((err)=>console.log(err))
      },[])
- 
+   
+  
  
  
   return (
@@ -43,7 +44,7 @@ export default function Table() {
 <td>{new Intl.DateTimeFormat('pt-BR',{dateStyle:'short'}).format(
   addDays(new Date(c.admission_date),1)
  )}</td>
-<td>{c.phone}</td>
+<td>{formatarTelefone(c.phone)}</td>
   </tr>
  )})}
 </tbody>
