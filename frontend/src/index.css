@@ -25,11 +25,14 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-size: var(--m);
+  font-family: Helvetica Neue;
 }
 
 body {
-  font-family: Helvetica Neue;
+ 
 background: var(--gray);
+
 /* width: 100%; */
 
   /* height: 600px; */
@@ -46,15 +49,6 @@ padding:   32px;
   padding-bottom: 25px;
     
 }
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
 @media (max-width: 768px) {
   
   .titles{

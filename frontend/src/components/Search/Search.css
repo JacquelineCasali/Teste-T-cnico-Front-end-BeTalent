@@ -14,7 +14,7 @@ align-items: center;
     border-radius: 10px;
     line-height: 19px;
     font-weight: 400;
-    font-size: var(--m);
+    /* font-size: var(--m); */
  
     float: none;
 
@@ -35,11 +35,11 @@ align-items: center;
   
     .busca{
       padding-top: 20px;
-      width: 335px;
+      width: 100%;
         
     }
     .pesquisa{
-      width: 335px;
+      width: 100%;
     }
   
   }
