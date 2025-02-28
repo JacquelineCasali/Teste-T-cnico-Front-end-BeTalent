@@ -12,7 +12,7 @@ table{
 }
 
 table tr th {
-    height: 47px;  
+    height: 42px;  
    background: var(--primary); 
  text-align: center;
    color:var(--whithe);
@@ -136,10 +136,7 @@ line-height: 19.54px;
 
 }
 p{
-
- 
   font-weight: 400;
-
 line-height: 19.54px;
 }
 

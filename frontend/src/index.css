@@ -39,14 +39,14 @@ background: var(--gray);
 }
 .main{
 
-padding:   32px;
+padding:15px   32px 32px 32px ;
 
 }
 .titles{
   justify-content: space-between;
   align-items: center;
   display: flex;
-  padding-bottom: 25px;
+  padding-bottom: 15px;
     
 }
 @media (max-width: 768px) {
@@ -55,7 +55,7 @@ padding:   32px;
     
     align-items: flex-start;
    flex-direction: column;
-      
+   padding-bottom: 30px; 
   }
   
 
