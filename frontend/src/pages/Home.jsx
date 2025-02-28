@@ -1,17 +1,14 @@
-
 import { Head } from "../components/Head/Head";
 import Navbar from "../components/Navbar/Navbar";
-// import Search from "../components/Search/Search";
 import Table from "../components/Table/Table";
-
-
-
-
+import Title from "../components/Title/Tlite";
+import Search from "../components/Search/Search";
+import { useContext } from "react";
+import { TableContext } from "../context/TableContext";
 
 export default function Home() {
   
-
-
+const {dados,busca,setBusca}=useContext(TableContext)
 
   return (
     
@@ -21,19 +18,15 @@ export default function Home() {
 <Head title="Projeto BeTalent"/> 
   <Navbar/>
    <div className="main">
- 
+   <div className="titles">
 
-<Table  />
-   
- 
+<Title >Funcionários</Title> 
+<Search busca={busca} setBusca={setBusca}/> 
+</div>
 
-  </div>
+<Table dados={dados} />
+   </div>
 
-
-  
-
-
- 
 </>
   )
  

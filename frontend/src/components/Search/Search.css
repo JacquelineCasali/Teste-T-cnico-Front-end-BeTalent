@@ -31,3 +31,15 @@ align-items: center;
     color: var(--gray-10);
     
   }
+  @media (max-width: 768px) {
+  
+    .busca{
+      padding-top: 20px;
+      width: 335px;
+        
+    }
+    .pesquisa{
+      width: 335px;
+    }
+  
+  }
